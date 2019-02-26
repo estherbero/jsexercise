@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Essentials</title>
+    </head>
+    <body>
+        <h1>JS Ex.8  program takes a random integer between 1 to 10,
+             the user is then prompted to input a guess number. 
+             If the user input matches with guess number, 
+             the program will display a message "Good Work" 
+             otherwise display a message "Not matched"
+</h1>
+          <div id="main"></div>
+
+
+        <script>
+        
+        var result="";
+
+        number = window.prompt("Input a Number from 1 to 10 : ");
+           // var a = getRandomizer (1,10);
+// Retorna un número aleatorio entre min (incluido) y max (excluido)
+function getRandomInt(min, max) {
+    result = Math.floor(Math.random() * 11) + 1;
+    
+    if (number===result)
+            console.log ("Good work" + number );
+            else
+            console.log ("Not matched" + number );
+
+}
+
+
+        </script>
+    </body>
+</html>

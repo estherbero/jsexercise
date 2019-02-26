@@ -1,0 +1,35 @@
+ 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Essentials</title>
+    </head>
+    <body>
+        <h1>Ex.7 JS Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+</h1>
+          <div id="main"></div>
+
+
+        <script>
+
+            var year;
+            //para el año 2014, itera hasta menor o igual que 2050
+            for (year=2014; year<=2050;year++)
+
+                {
+                //d= (year, enero es mes 0, dia 1)
+                var d = new Date(year,0,1);
+                //los dias de la semana serían Domingo=0 Lunes=1, martes=2...
+                if (d.getDay()===0)
+                    console.log ("This day is 1st January of " + year);
+                    //no es obligatorio poner else
+                    else
+                    console.log ("In " + year + " won't be Sunday");
+                }
+
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,40 @@
+ 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Essentials</title>
+    </head>
+    <body>
+        <h1>Ex.3 JS program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.</h1>
+          <div id="main"></div>
+
+
+        <script>
+
+
+        var lado1 = 5;
+        var lado2= 6;
+        var lado3=7;
+        var sumalados= (lado1 + lado2 + lado3); //=9
+        var semiperimetro= sumalados /2;
+        	console.log (semiperimetro);
+
+        var A=semiperimetro - lado1;
+        var B=semiperimetro - lado2;
+        var C=semiperimetro - lado3;
+        var calc= semiperimetro*A*B*C; //9*4*3*2=216
+ 			console.log (calc);
+ 		var area= Math.sqrt(calc); //14,69
+ 		 			console.log(area);
+
+ 		// or this way:   var area= Math.sqrt((semiperimetro*(semiperimetro - lado1)*(semiperimetro - lado2)*(semiperimetro - lado3)));
+
+
+
+        </script>
+    </body>
+</html>
+
+
