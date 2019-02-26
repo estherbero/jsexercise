@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Essentials</title>
+    </head>
+    <body>
+        <h1>JS Ex.10 
+                program to convert temperatures
+                 to and from Celsius, Fahrenheit
+        </h1>
+          <div id="main"></div>
+
+
+          <form>
+
+                Celsius: <input type="text" id="celgrades" /><br>
+                Fahrenheit: <input type="text" id="fargrades" /><br>
+                
+                <input type="button" onClick="convertToCelcius()" Value="convert to Celcius" />
+                <input type="button" onClick="convertToFahrenheit()" Value="covert to Fahrenheit" />
+ 
+                
+                <p>The Result is : <br>
+                    <span id = "grades"></span>
+            </form>
+
+        <script>
+
+                function convertToCelcius()
+                {
+                        num1 = document.getElementById("fargrades").value;
+                        document.getElementById("grades").innerHTML = (num1-32) / 1.8;
+                        console.log ("maths done");
+
+                }
+                function convertToFahrenheit()
+                {
+                        num2 = document.getElementById("celgrades").value;
+                        document.getElementById("grades").innerHTML = (num2 * 1.8)+32;
+                        console.log ("maths done 2");
+
+                }
+
+
+        </script>
+    </body>
+</html>
